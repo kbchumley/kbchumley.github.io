@@ -6,6 +6,14 @@ h1 {
 	font-weight: 700;
 	text-align: center;
  }
- img{
+img{
  	width: 400px;
  }
+
+.logo{
+	color:orange;
+	font-size: 1.5em;
+}
+
+
+ 
