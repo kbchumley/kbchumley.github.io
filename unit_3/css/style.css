@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 h1 {
 	color:#06c5bc;
-	font-family: Helvetica;
-	font-size: 70px;
+	font-family:'libre-Baskerville', serif;
+	font-size: 50px;
 	font-style: normal;
 	font-weight: 700;
 	text-align: center;
@@ -13,6 +15,11 @@ img{
 .logo{
 	color:orange;
 	font-size: 1.5em;
+	font-weight: bold;
+}
+p{
+	font-family:'Montserrat', sans-serif;
+	font-weight:400;
 }
 
 
