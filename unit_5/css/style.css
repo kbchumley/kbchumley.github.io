@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+#wrapper{
+	background-color: purple;
+    border: 1px black solid;
+    padding: 20px;
+ }
+#logo{
+	color: orange;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+#one{
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+#two{
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+#three{
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+#four{
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+nav{
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+header{
+	background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
+}
+img{
+	display: block;
+	margin: 0 auto;
+ 	width: 200px;
+}
+h1 {
+	font-family: 'libre-Baskerville', serif;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+ }
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+footer{
+	background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+
