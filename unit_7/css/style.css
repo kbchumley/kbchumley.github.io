@@ -1,0 +1,159 @@
+
+/* Horizontal Navigation Styling - Begin */ 
+
+li, a, button {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	font-style: normal;
+	color: #333;
+	text-decoration: none;
+}
+
+header {
+	box-shadow: 0 1px 2px #ccc;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: white;
+	position: sticky;
+	top: 0;
+}
+
+.logo {
+	cursor: pointer;
+	margin-right: auto;
+	justify-content: left;
+}
+
+.nav__links {
+	list-style: none;
+}
+
+.nav__links li{
+	display: inline-block;
+	padding: 0px 30px;
+}
+
+.nav__links li a{
+	transition:  all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+	color: #7d0096;
+}
+
+button{
+	margin-left: 20px;
+	padding: 9px 25px;
+	border: solid;
+	background-color: white;
+	border-radius: 10px;
+	border-width: 1.5px;
+	cursor: pointer;
+	transition:  all 0.3s ease 0s;
+}
+
+button:hover{
+	background-color: black;
+	color: white;
+}
+
+/* Horizontal Navigation Styling - End*/ 
+
+
+#intro{
+	height: 70vh;
+    padding: 2em 0;
+    width: 100%;
+	background-repeat: no-repeat;
+  	background-position: top;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+img{
+	float: left;
+}
+
+.hero__container{
+	margin: 0px auto;
+	width: 85%; 
+	max-width: 1400px;
+    flex-wrap: nowrap;
+}
+
+
+.section_intro_container .hero_image{
+    margin-right: 20px;
+
+}
+
+.hero__title{
+	font-family: novel-pro,Georgia,Times,Times New Roman,serif;
+    font-weight: 800;
+    line-height: 1;
+    font-size: 72px;
+    color: white;
+    margin-bottom: 0;
+    letter-spacing: -2.4px;
+    max-width: 100%;
+}
+
+.hero__text{
+	padding-top: 22em;
+
+}
+.hero__description{
+	font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-style: normal;
+    line-height: 1.6;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+	width: 65%;
+
+}
+
+.section_intro_container{
+	padding: 20em 0;
+}
+
+
+.section_intro_container .hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: 50px;
+}
+
+.section_intro_container .hero__title {
+ 
+}
+
+.section_intro_container .hero__description {
+    letter-spacing: -.25px;
+	margin-bottom: 0;
+    max-width: 100%;
+}
+
+
+body {
+    
+}
+
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+div{
+	display: block;
+}
+
+
+

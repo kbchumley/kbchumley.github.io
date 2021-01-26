@@ -6,43 +6,63 @@
 	<link rel="stylesheet" href="https://use.typekit.net/voj0wbi.css">
 </head>
 <body>
-	<header>
-		<p class="logo">Bixal Theory</p>
-		<nav class="main-nav">
-			<a href="#">About</a>
-			<a href="#">Episodes</a>
-			<a href="#">Subscribe</a>
-			<a href="#">Contact</a>
-		</nav>
+	<header class="site-header site-header--fixed">
+		<div class="site-header__content">
+			<div class="site-header__logo">
+				<a aria-current="page" class="nav-link" href="#">
+					<span class="visually-hidden"></span>
+					<img src="images/logo.svg" alt="Bixal Podcast Logo">
+				</a>
+			</div>
+			<nav class="main-nav">
+				<ul>
+					<li class="main-nav__item"><a class="nav-link" href="#"><span class="nav-link__inner">About</span></a></li>
+					<li class="main-nav__item"><a class="nav-link" href="#"><span class="nav-link__inner">Episodes</span></a></li>
+					<li class="main-nav__item"><a class="nav-link" href="#"><span class="nav-link__inner">Subscribe</span></a></li>
+					<li class="main-nav__item"><a class="nav-link" href="#"><span class="nav-link__inner">Contact</span></a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
-	<section id="intro">
-		<h1>This is the Bixal podcast.</h1>
-		<h2>Let's talk Tech.</h2>
-	</section>
-	<section id="current">
-		<h2>Current Episode</h2>
-		<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269925856&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ux-and-growth" title="UX &amp; Growth Podcast" target="_blank" style="color: #cccccc; text-decoration: none;"></a> <a href="https://soundcloud.com/ux-and-growth/building-a-ux-team-educating-designers-with-aarron-walter-vp-of-design-education-at-invision" title="Building a UX Team &amp; Educating Designers with Aarron Walter (VP of Design Education at InVision)" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
-	</section>
-	<section id="two column" class="clearfix">
-		<h2>Past Episodes</h2>
+	<main class="main-content">
+		<div class="page--home">
+			<section id="image-hero" class="section-container image-hero ">
+				<div class="hero__container">
+					<div class="hero__image">
+						<img src="images/hero.png" alt="hero image 1">
+					</div>
+					<div class="hero__text">
+						<h1 class="hero__title">This is a Bixal Podcast.</h1>
+						<p class="hero__description">A podcast behind designing in the federal space, human centered strategies, and a mixture of tech world topics. Our goal is to help give back to the open source community with our own personal twist on the best methods and theories for agile development.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="current">
+			<h2>Current Episode</h2>
+			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269925856&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ux-and-growth" title="UX &amp; Growth Podcast" target="_blank" style="color: #cccccc; text-decoration: none;"></a> <a href="https://soundcloud.com/ux-and-growth/building-a-ux-team-educating-designers-with-aarron-walter-vp-of-design-education-at-invision" title="Building a UX Team &amp; Educating Designers with Aarron Walter (VP of Design Education at InVision)" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+		</section>
+		<section id="two column" class="clearfix">
+			<h2>Past Episodes</h2>
 			<aside id="left">
-		        <p>ASIDE<p>
-		        <p>Lorem Ipsum…</p>
-		    </aside>
-		    <article id="right">
-		        <p>ARTICLE</p>
-		        <p>Lorem Ipsum…</p>
-		        <p>Lorem Ipsum…</p>
-		    </article>
-		<a href="#">View Topics & Archives</a>
-	</section>
-	<section id="about">
-		<h2>About</h2>
-		<p>Bixal Theory is a podcast behind designing in the federal space, human centered strategies, and a mixture of tech world topics. Our goal is to help give back to the open source community with our own personal twist on the best methods and theories for agile development.</p>
-	</section>
-	<footer>
-		<p>Contact Me: <a href="mailto:kayla.chumley@bixal.com">kayla.chumley@bixal.com</a></p>
-		<p>&copy; 2021 Kayla Chumley</p>
-	</footer>
-</body>
-</html>
+				<p>ASIDE<p>
+					<p>Lorem Ipsum…</p>
+				</aside>
+				<article id="right">
+					<p>ARTICLE</p>
+					<p>Lorem Ipsum…</p>
+					<p>Lorem Ipsum…</p>
+				</article>
+				<a href="#">View Topics & Archives</a>
+			</section>
+			<section id="about">
+				<h2>About</h2>
+				<p>Bixal Theory is a podcast behind designing in the federal space, human centered strategies, and a mixture of tech world topics. Our goal is to help give back to the open source community with our own personal twist on the best methods and theories for agile development.</p>
+			</section>
+		</main>
+		<footer>
+			<p>Contact Me: <a href="mailto:kayla.chumley@bixal.com">kayla.chumley@bixal.com</a></p>
+			<p>&copy; 2021 Kayla Chumley</p>
+		</footer>
+	</body>
+	</html>
