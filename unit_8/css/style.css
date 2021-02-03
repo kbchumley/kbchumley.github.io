@@ -1,11 +1,11 @@
 *{
 	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 }
 
 .main-content{
 	background-color: #efefef;
+	display: grid;
 }
 
 /* Horizontal Navigation Styling - Begin */ 
@@ -22,38 +22,31 @@ li, a, button {
 header {
 	box-shadow: 0 1px 2px #ccc;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
+	grid-template-columns: max-content auto max-content;
 	padding: 30px 10%;
 	background-color: white;
 	position: sticky;
-	top: 0;
 }
 
-.logo {
-	width: 220px;
+.logo img {
+	width: 200px;
 	margin-right: auto;
 	justify-content: left;
 }
 
-.nav__links {
-	list-style: none;
+nav {
+	justify-self: end;
 }
 
-.nav__links li{
-	display: inline-block;
-	padding: 0px 30px;
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 2rem;
 }
 
-.nav__links li a{
-	transition:  all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-	color: #7d0096;
-}
-
-button{
+.cta {
 	margin-left: 20px;
 	padding: 9px 25px;
 	border: solid;
@@ -64,72 +57,96 @@ button{
 	transition:  all 0.3s ease 0s;
 }
 
-button:hover{
+.cta:hover {
 	background-color: black;
 	color: white;
 }
 
-/* Horizontal Navigation Styling - End*/ 
-
-/* Intro Hero Section Styling - Begin */ 
-
-#intro{
-    padding: 4em 0 6em;
-    width: 100%;
-	background-repeat: no-repeat;
-  	background-position: top;
-	background-size: cover;
-	margin: 0 auto;
+.nav__list {
+	list-style: none;
 }
 
-.hero__container{
+.nav__list li{
+	display: inline-block;
+	padding: 0px 30px;
+}
+
+.nav__link {
+	transition:  all 0.3s ease 0s;
+}
+
+.nav__link:hover {
+	color: #7d0096;
+}
+
+
+/* Horizontal Navigation Styling - End*/ 
+
+/* Intro Hero Image Section Styling - Begin */ 
+
+.hero__container {
 	margin: 0px auto;
 	width: 85%;
 	max-width: 1000px;
-    flex-wrap: nowrap;
-    display: flex;
+  display: flex;
+  flex-direction: row;
 }
 
-.hero__title{
+.hero__title {
 	font-family: novel-pro,Georgia,Times,Times New Roman,serif;
     font-weight: 800;
     line-height: 1;
     font-size: 3.5em;
     color: white;
-    margin-bottom: 0;
-    width: 700px;
+    margin-bottom: 0.5em;
 }
 
-.hero__text{
+.hero__text {
 	display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+	flex-direction: column;
     justify-content: flex-end;
-    margin-left: 50px;
-    margin-top: 10em;
-    max-width: 38em;
-    padding-bottom: 5px;
+    padding-left: 2em;
 }
-.hero__description{
+
+.hero__description {
 	font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-style: normal;
     line-height: 1.6;
     font-weight: 400;
     color: white;
-}
-
-.section_intro_container{
-	background-image: url(../images/background.jpg);
-	background-repeat: no-repeat;
-}
-
-.section_intro_container .hero__description {
     letter-spacing: -.25px;
-	margin-bottom: 0;
-    max-width: 100%;
 }
 
-/* Intro Section Styling - End */
+.section_intro_container {
+	background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  padding: 4em 0 8em;
+  width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+
+/* Social Channels */
+.social-channels__icons {
+	background: #fff;
+	border-radius: 10px;
+  box-shadow: 0 1px 2px #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: -75px auto 0;
+  padding: 30px 60px;
+	width: 70%;
+}
+
+.icon {
+  margin-bottom: 1em;
+	width: 250px;
+}
+
+/* Intro Hero Image Section Styling - End */
 
 /* Latest Episode Section Styling - Start */
 
@@ -143,16 +160,13 @@ button:hover{
 
 .latest_container{
 	width: 85%; 
-    flex-wrap: nowrap;
     align-items: center;
     margin: 3em 10em 3em 10em;
     padding-bottom: 12em;
 }
 
 .latest_text{
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    display: inline-flex;
+	display: inline-block;
     padding: 0 10px;
     border-left: 2px solid #03c5bc;
     border-right: 2px solid #03c5bc;
@@ -178,20 +192,24 @@ body {
 
 h2 {
 	font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
-    display: block;
     font-size: 1.5em;
     font-weight: 700;
 }
 
 
 p {
-    margin-top: 1em;
-}
-
-div{
-	display: block;
+   
 }
 
 
+/* Tablet Breakpoint */
+@media (max-width: 768px) {
 
+  .social-channels__icons {
+    flex-direction: column;
+  }
 
+  .icon {
+    width: 100%;
+  }
+}

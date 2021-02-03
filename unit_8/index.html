@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Bixal Theory Podcast</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/voj0wbi.css">
 </head>
 <body>
-	<header>
-		<img class="logo" src="images/logo.svg" alt="logo">
-		<nav>
-			<ul class="nav__links">
-				<li><a href="#">ABOUT</a></li>
-				<li><a href="#">EPISODES</a></li>
-				<li><a href="#">SUBSCRIBE</a></li>
+  
+  <header role="banner">
+		<a href="#" class="logo">
+			<img src="images/logo.svg" alt="logo">
+    </a>
+    
+		<nav role="navigation" class="main-nav"> <!-- This is a grid item -->
+			<ul class="nav__list">
+				<li><a class="nav__link" href="#">ABOUT</a></li>
+				<li><a class="nav__link" href="#">EPISODES</a></li>
+				<li><a class="nav__link" href="#">SUBSCRIBE</a></li>
+				<li><a class="nav__links cta" href="#">CONTACT</a></li>
 			</ul>
-		</nav>
-		<a class="cta" href="#"><button>CONTACT</button></a>
-	</header>
+    </nav>
+    
+  </header>
+  
 	<main class="main-content">
-		<section id="intro" class="section_intro_container">
+		<section class="section_intro_container">
 			<div class="hero__container">
 				<img class="hero_image" src="images/herob.png" alt="B monogram">
 				<div class="hero__text">
-					<h1 class="hero__title">A Podcast for the Bold.</h1>
+					<h1 class="hero__title">A Podcast<br> for the Bold.</h1>
 					<p class="hero__description">Conversations with strategists, designers, engineers and thinkers. A data, design and technology podcast with a dash of agile and a spoonful of strategy. Tune into the Bixal Theory Podcast to get more insight on the Bixal Team Members, learn more about our methods and discover a new sense of community.</p>
-				
-			</div>
+        </div>
+      </div>
 		</section>
+
+		<section class="social-channels">
+			<div class="social-channels__icons">
+        <img class="icon" src="images/apple-podcasts.svg">
+        <img class="icon" src="images/google-podcasts-badge.svg">
+        <img class="icon" src="images/spotify-podcast-badge-blk-grn-660x160.svg">
+      </div>
+		</section>
+		
 		<section id="latest" class="latest_container">
 			<h2 class="latest_text">LATEST EPISODE</h2>
 		</section>
