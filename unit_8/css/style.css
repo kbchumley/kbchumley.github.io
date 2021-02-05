@@ -1,11 +1,11 @@
-*{
+* {
 	margin: 0;
 	box-sizing: border-box;
 }
 
-.main-content{
+.main-content {
 	background-color: #efefef;
-	display: grid;
+	margin-top: 90px;
 }
 
 /* Horizontal Navigation Styling - Begin */ 
@@ -27,7 +27,10 @@ header {
 	grid-template-columns: max-content auto max-content;
 	padding: 30px 10%;
 	background-color: white;
-	position: sticky;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 .logo img {
@@ -66,7 +69,7 @@ ul {
 	list-style: none;
 }
 
-.nav__list li{
+.nav__list li {
 	display: inline-block;
 	padding: 0px 30px;
 }
@@ -88,41 +91,40 @@ ul {
 	margin: 0px auto;
 	width: 85%;
 	max-width: 1000px;
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .hero__title {
 	font-family: novel-pro,Georgia,Times,Times New Roman,serif;
-    font-weight: 800;
-    line-height: 1;
-    font-size: 3.5em;
-    color: white;
-    margin-bottom: 0.5em;
+	font-weight: 800;
+	line-height: 1;
+	font-size: 3.5em;
+	color: white;
+	margin-bottom: 0.5em;
 }
 
 .hero__text {
 	display: flex;
 	flex-direction: column;
-    justify-content: flex-end;
-    padding-left: 2em;
+	justify-content: flex-end;
+	padding-left: 2em;
 }
 
 .hero__description {
 	font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-style: normal;
-    line-height: 1.6;
-    font-weight: 400;
-    color: white;
-    letter-spacing: -.25px;
+	font-style: normal;
+	line-height: 1.6;
+	font-weight: 400;
+	color: white;
+	letter-spacing: -.25px;
 }
 
 .section_intro_container {
 	background-image: url(../images/background.jpg);
-  background-repeat: no-repeat;
-  padding: 4em 0 8em;
-  width: 100%;
 	background-repeat: no-repeat;
+	padding: 4em 0 8em;
+	width: 100%;
 	background-size: cover;
 	margin: 0 auto;
 }
@@ -132,17 +134,17 @@ ul {
 .social-channels__icons {
 	background: #fff;
 	border-radius: 10px;
-  box-shadow: 0 1px 2px #ccc;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: -75px auto 0;
-  padding: 30px 60px;
+    box-shadow: 0 1px 2px #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: -75px auto 0;
+    padding: 30px 60px;
 	width: 70%;
 }
 
 .icon {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 	width: 250px;
 }
 
@@ -150,7 +152,7 @@ ul {
 
 /* Latest Episode Section Styling - Start */
 
-#latest{
+#latest {
 	font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-style: normal;
     line-height: 1.6;
@@ -158,14 +160,14 @@ ul {
     color: #333;
 }
 
-.latest_container{
+.latest_container {
 	width: 85%; 
     align-items: center;
     margin: 3em 10em 3em 10em;
     padding-bottom: 12em;
 }
 
-.latest_text{
+.latest_text {
 	display: inline-block;
     padding: 0 10px;
     border-left: 2px solid #03c5bc;
@@ -196,10 +198,6 @@ h2 {
     font-weight: 700;
 }
 
-
-p {
-   
-}
 
 
 /* Tablet Breakpoint */
