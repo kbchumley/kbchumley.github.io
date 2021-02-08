@@ -15,20 +15,18 @@
 		<a href="#" class="logo">
 			<img src="images/logo.svg" alt="logo">
 		</a>
-
 		<nav role="navigation" class="main-nav">
 			<ul class="nav__list">
-				<li><a class="nav__link" href="#">ABOUT</a></li>
-				<li><a class="nav__link" href="#">EPISODES</a></li>
-				<li><a class="nav__link" href="#">SUBSCRIBE</a></li>
-				<li><a class="nav__links cta" href="#">CONTACT</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">About</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">Episodes</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">Subscribe</a></li>
+				<li class="nav__item"><a class="nav__links nav__link--button" href="#">Contact</a></li>
 			</ul>
 		</nav>
-
 	</header>
 
-	<main class="main-content">
-		<section class="intro_container">
+	<main>
+		<section class="hero">
 			<div class="hero__container">
 				<img class="hero_image" src="images/herob.png" alt="B monogram">
 				<div class="hero__text">
@@ -43,167 +41,100 @@
 
 		<section class="social-channels">
 			<div class="social-channels__icons">
-				<a href="#" class="icon">
-					<img src="images/apple-podcasts.svg" alt="apple podcast logo">
-				</a>
-				<a href="#" class="icon">
-					<img src="images/google-podcasts-badge.svg" alt="google podcast logo">
-				</a>
-				<a href="#" class="icon">
-					<img src="images/spotify-podcast-badge-blk-grn-660x160.svg" alt="spotify podcast logo">
-				</a>
+				<a href="#" class="icon"><img src="images/apple-podcasts.svg" alt="apple podcast logo"></a>
+				<a href="#" class="icon"><img src="images/google-podcasts-badge.svg" alt="google podcast logo"></a>
+				<a href="#" class="icon"><img src="images/spotify-podcast-badge-blk-grn-660x160.svg" alt="spotify podcast logo"></a>
 			</div>
 		</section>
 
-		<section class="latest_container">
-			<h2 class="latest_title">LATEST EPISODE</h2>
-			<img class="latest__image" src="images/latestepisode.jpg">
-				<h3 class="latest__text">10 Imortant Building Blocks for Small Business Success</h3>
-					<p class="latest_description">There are so many things that go into building a successful business. Each business can arrange those building blocks differently. First, there are some essential elements that should go into every business plan. Here, members of the small business community share some essential building blocks for successful businesses. Listen to find out more about small business and the next steps you can take to improve your small business environment. </p>
+		<section class="l-section">
+      <div class="l-constrain">
+        <h2 class="l-section__title border-teal">Latest Episode</h2>
+        <div class="episode">
+          <img class="episode__image" src="images/latestepisode.jpg">
+          <div class="episode__content">
+            <h3 class="episode__heading">10 Imortant Building Blocks for Small Business Success</h3>
+            <p>There are so many things that go into building a successful business. Each business can arrange those building blocks differently. First, there are some essential elements that should go into every business plan. Here, members of the small business community share some essential building blocks for successful businesses. Listen to find out more about small business and the next steps you can take to improve your small business environment. </p>
+          </div>
+				  <a href="#" class="episode__play">
+					  <img src="images/play.svg" alt="image of a play button">Listen Now
+				  </a>
+        </div>
+      </div>
 		</section>
-		<section class="play_container">
-			<div class="play_image">
-				<a href="#" class="play_icon">
-					<img src="images/play.svg" alt="image of a play button">
-				</a>
-			</div>
-				<div class="listen_text">
-					<a href="#" class="listen_text">LISTEN NOW</a>
-				</div>
+
+    <section class="l-section l-section--alt">
+      <div class="l-constrain">
+        <h2 class="l-section__title border-orange">Past Episodes</h2>
+        <div class="l-grid l-grid--3col">
+          <div class="episode episode--teaser">
+            <img src="images/episode6.jpg" alt="image of people working at a desk">
+            <div class="line line--yellow"></div>
+            <div class="episode__content">
+              <h4 class="episode__heading">Jan 20th, 2021 | Episode 6</h4>
+              <ul class="list list--yellow">
+								<li>User Experience for the Blind</li>
+							</ul>
+            </div>
+          </div>
+          <div class="episode episode--teaser">
+            <img src="images/episode5.jpg" alt="image of people working at a desk">
+            <div class="line line--purple"></div>
+            <div class="episode__content">
+              <h4 class="episode__heading">Jan 14th, 2021 | Episode 5</h4>
+              <ul class="list list--purple">
+								<li>3 ways Content Strategy can be used for your Service Design Offering</li>
+							</ul>
+            </div>
+          </div>
+          <div class="episode episode--teaser">
+            <img src="images/episode4.jpg" alt="image of people working at a desk">
+            <div class="line line--orange"></div>
+            <div class="episode__content">
+              <h4 class="episode__heading">Jan 7th, 2021 | Episode 4</h4>
+              <ul class="list list--orange">
+								<li>USWDS - Tips and Tricks</li>
+							</ul>
+            </div>
+          </div>
+          <div class="episode episode--teaser">
+            <img src="images/episode3.jpg" alt="image of people working at a desk">
+            <div class="line line--blue"></div>
+            <div class="episode__content">
+              <h4 class="episode__heading">Jan 1st, 2021 | Episode 3</h4>
+              <ul class="list list--blue">
+								<li>Becoming Platform Agnostic: Developing Solutions with Javascript Frameworks</li>
+							</ul>
+            </div>
+          </div>
+          <div class="episode episode--teaser">
+            <img src="images/episode2.jpg" alt="image of people working at a desk">
+            <div class="line line--red"></div>
+            <div class="episode__content">
+              <h4 class="episode__heading">Dec 25th, 2020 | Episode 2</h4>
+              <ul class="list list--red">
+								<li>13 Free Tools you can use to test section 508 Accessibility</li>
+							</ul>
+            </div>
+          </div>
+          <div class="episode episode--teaser">
+            <img src="images/episode1.jpg" alt="image of people working at a desk">
+            <div class="line line--maroon"></div>
+            <div class="episode__content">
+              <h4 class="episode__heading">Dec 18th, 2020 | Episode 1</h4>
+              <ul class="list list--maroon">
+								<li>The Do's and Dont's of Drupal 9</li>
+							</ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="l-section__postscript">
+          <a href="#" class="button">Explore All Episodes</a>
+        </div>
+      </div>
 		</section>
-		<section class="section section--alt past_episodes_container">
-			<div class="columns-list-container">
-				<h2 class="past_title">PAST EPISODES</h2>
-				<div class="l-grid">
-					<div class="episode column-list-columns is-image yellow">
-						<div class="column-header-image">
-							<div class="image-wrapper">
-								<a href="#" class="episode-six-image">
-									<img src="images/episode6.jpg" alt="image of people working at a desk">
-								</a>
-							</div>
-						<div class="vertical-line"></div>
-						</div>
-						<div class="column-header-title">
-							<h4>Jan 20th,  2021  |  Episode 6</h4>
-						</div>
-						<div class="list-container">
-							<ul class="column-list">
-								<li>
-									User Experience for the Blind
-								</li>
-							</ul>
-						</div>
-						<div class="column-wrapper" style="margin-left: 5px;"></div>
-					</div>
-					<div class="episode column-list-columns is-image purple">
-						<div class="column-header-image">
-							<div class="image-wrapper">
-								<a href="#" class="episode-five-image">
-									<img src="images/episode5.jpg" alt="image of people working at a desk">
-								</a>
-							</div>
-						<div class="vertical-line"></div>
-						</div>
-						<div class="column-header-title">
-							<h4>Jan 14th,  2021  |  Episode 5</h4>
-						</div>
-						<div class="list-container">
-							<ul class="column-list">
-								<li>
-									3 ways Content Strategy can be used for your Service Design Offering
-								</li>
-							</ul>
-						</div>
-						<div class="column-wrapper" style="margin-left: 5px;"></div>
-					</div>
-					<div class="episode column-list-columns is-image orange">
-						<div class="column-header-image">
-							<div class="image-wrapper">
-								<a href="#" class="episode-four-image">
-									<img src="images/episode4.jpg" alt="image of people working at a desk">
-								</a>
-							</div>
-						<div class="vertical-line"></div>
-						</div>
-						<div class="column-header-title">
-							<h4>Jan 7th,  2021  |  Episode 4</h4>
-						</div>
-						<div class="list-container">
-							<ul class="column-list">
-								<li>
-									USWDS - Tips and Tricks
-								</li>
-							</ul>
-						</div>
-						<div class="column-wrapper" style="margin-left: 5px;"></div>
-					</div>
-					<div class="episode column-list-columns is-image maroon">
-						<div class="column-header-image">
-							<div class="image-wrapper">
-								<a href="#" class="episode-three-image">
-									<img src="images/episode3.jpg" alt="image of people working at a desk">
-								</a>
-							</div>
-						<div class="vertical-line"></div>
-						</div>
-						<div class="column-header-title">
-							<h4>Jan 1st,  2021  |  Episode 3</h4>
-						</div>
-						<div class="list-container">
-							<ul class="column-list">
-								<li>
-									Becoming Platform Agnostic: Developing Solutions with Javascript Frameworks
-								</li>
-							</ul>
-						</div>
-						<div class="column-wrapper" style="margin-left: 5px;"></div>
-					</div>
-					<div class="episode column-list-columns is-image red">
-						<div class="column-header-image">
-							<div class="image-wrapper">
-								<a href="#" class="episode-two-image">
-									<img src="images/episode2.jpg" alt="image of people working at a desk">
-								</a>
-							</div>
-						<div class="vertical-line"></div>
-						</div>
-						<div class="column-header-title">
-							<h4>Dec 25th,  2020  |  Episode 2</h4>
-						</div>
-						<div class="list-container">
-							<ul class="column-list">
-								<li>
-									13 Free Tools you can use to test section 508 Accessibility
-								</li>
-							</ul>
-						</div>
-						<div class="column-wrapper" style="margin-left: 5px;"></div>
-					</div>
-					<div class="episode column-list-columns is-image teal">
-						<div class="column-header-image">
-							<div class="image-wrapper">
-								<a href="#" class="episode-one-image">
-									<img src="images/episode1.jpg" alt="image of people working at a desk">
-								</a>
-							</div>
-						<div class="vertical-line"></div>
-						</div>
-						<div class="column-header-title">
-							<h4>Dec 18th,  2020  |  Episode 1</h4>
-						</div>
-						<div class="list-container">
-							<ul class="column-list">
-								<li>
-									The Do's and Dont's of Drupal 9
-								</li>
-							</ul>
-						</div>
-						<div class="column-wrapper" style="margin-left:5px;"></div>
-					</div>
-				</div>
-			</div>
-		</section>
+
 	</main>
 	<footer>
 		<p>Contact Me: <a href="mailto:kayla.chumley@bixal.com">kayla.chumley@bixal.com</a></p>
