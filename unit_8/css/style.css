@@ -514,9 +514,9 @@ footer {
 }
 
 .subscribe__b-container {
+  left: 675px;
+  bottom: 294px;
   position: absolute;
-  right: -227px;
-  top: -184px;
   width: 230px;
 
 }
