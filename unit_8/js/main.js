@@ -1,24 +1,32 @@
-function navSlide() {
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector(".nav-list");
-    const navLinks = document.querySelectorAll(".nav-list li");
-    
-    burger.addEventListener("click", () => {
-        //Toggle Nav
-        nav.classList.toggle("nav-active");
-        
-        //Animate Links
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = ""
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-            }
-        });
-        //Burger Animation
-        burger.classList.toggle("toggle");
-    });
-    
-}
+$(function() {
 
-navSlide();
+  // Hamburger
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function() {
+    $hamburger.toggleClass("is-active");
+    $(".nav-list").toggleClass("is-active");
+    $(".l-page").toggleClass("is-active");
+  });
+
+  // Close mobile menu on menu click
+  $(".nav__link").each(function() {
+    $(this).on("click", function() {
+      $hamburger.toggleClass("is-active");
+      $(".nav-list").toggleClass("is-active");
+    });
+  });
+
+  // Close mobile menu on site name click
+  $(".site-name").on("click", function() {
+    if($hamburger.hasClass("is-active")){
+      $hamburger.toggleClass("is-active");
+      $(".nav-list").toggleClass("is-active");
+    }
+  });
+
+  // Change header background color and menu items once scroll to certain point.
+  // $(document).scroll(function () {
+  //   var $header = $(".l-header");
+  //   $header.toggleClass("scrolled", $(this).scrollTop() > $header.height());
+  // });
+});

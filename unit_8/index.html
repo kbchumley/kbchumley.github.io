@@ -5,29 +5,34 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Bixal Theory Podcast</title>
+  <link rel="stylesheet" href="css/hamburgers.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/voj0wbi.css">
 </head>
 
 <body>
-  <div class="l-page l-page--home is-active">
+  <div class="l-page">
     <header class="l-header" role="banner">
-      <a class="site-name" href="index.html">
-        <img src="images/logo.svg" alt="logo">
-      </a>
-      <nav id="navigation" role="navigation" class="main-nav">
-        <ul class="nav-list is-active">
-          <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-          <li class="nav__item"><a class="nav__link" href="#episodes">Episodes</a></li>
-          <li class="nav__item"><a class="nav__link" href="#subscribe">Subscribe</a></li>
-          <li class="nav__item"><a class="nav__links nav__link--button" href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+      <div class="l-constrain">
+        <div class="l-header__grid">
+          <a class="site-name" href="index.html">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+          <nav id="navigation" role="navigation" class="main-nav">
+            <button class="hamburger hamburger--elastic" type="button" aria-label="Menu" aria-controls="navigation">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <ul class="nav-list">
+              <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+              <li class="nav__item"><a class="nav__link" href="#episodes">Episodes</a></li>
+              <li class="nav__item"><a class="nav__link" href="#subscribe">Subscribe</a></li>
+              <li class="nav__item"><a class="nav__link nav__link--button" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main>
@@ -140,24 +145,20 @@
         </div>
       </section>
 
-      <section id="subscribe" class="l-section l-section--alt_2">
+      <section id="subscribe" class="l-section l-section--bg">
         <div class="l-constrain">
-          <div class="parent-wrapper">
-            <div class="subscribe__b-container" role="presentation" aria-hidden="true">
-              <img src="images/greenB.svg" alt="Bixal stylized B" class="subscribe__b">
-            </div>
-            <div class="subscribe-wrapper">
-              <h3> Tune in every Friday</h3>
-              <hr>
-              <h4>Subscribe to our mailing list for updates</h4>
-              <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail">
-              <div class="submit-btn">Subscribe</div>
+          <div class="subscribe__wrapper">
+            <img src="images/greenB.svg" alt="Bixal stylized B" class="subscribe__icon">
+            <h3 class="subscribe__title"> Tune in every Friday</h3>
+            <hr>
+            <h4 class="subscribe__subtitle">Subscribe to our mailing list for updates</h4>
+            <div class="subscribe__form">
+              <input type="email" name="email" class="subscribe__input" placeholder="Your e-mail">
+              <div class="subscribe__btn">Subscribe</div>
             </div>
           </div>
         </div>
       </section>
-
-    </main>
 
       <section id="contact" class="contact-page-section">
         <div class="l-constrain">
@@ -167,49 +168,43 @@
             <p>How can we improve our podcast?</p>
           </div>
           <div class="inner-container">
-            <div class="row clearfix">
-      
-              <!--Form Column-->
-              <div class="form-column col-md-8 col-sm-12 col-xs-12">
-                <div class="inner-column">
-      
-                  <!--Contact Form-->
-                  <div class="contact-form">
-                    <form method="post" action="sendemail.php" id="contact-form">
-                      <div class="row clearfix">
-                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                          <input type="text" name="name" value="" placeholder="Name" required>
-                        </div>
-                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                          <input type="email" name="email" value="" placeholder="Email" required>
-                        </div>
-                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                          <input type="text" name="subject" value="" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                          <input type="text" name="phone" value="" placeholder="Phone" required>
-                        </div>
-                        <div class="form-group col-md-12 col-sm-12 co-xs-12">
-                          <textarea name="message" placeholder="Massage"></textarea>
-                        </div>
-                        <div class="form-group col-md-12 col-sm-12 co-xs-12">
-                          <button type="submit" class="theme-btn btn-style-one">Send Now</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-              <!--End Contact Form-->
-      
+            <div class="form-column">
+              <div class="inner-column">
+
+                <div class="contact-form">
+                  <form method="post" action="" id="contact-form">
+                    <div class="form-group">
+                      <input type="text" name="name" value="" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" name="email" value="" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="subject" value="" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="phone" value="" placeholder="Phone" required>
+                    </div>
+                    <div class="form-group">
+                      <textarea name="message" placeholder="Massage"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="theme-btn btn-style-one">Send Now</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+    </main>
     <footer>
       <p>&copy; 2021 Kayla Chumley</p>
     </footer>
   </div>
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
