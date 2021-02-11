@@ -25,9 +25,8 @@ $(function() {
   });
 
   // Change header background color and menu items once scroll to certain point.
-  $(document).scroll(function () {
-    var $header = $(".l-header");
-    $header.toggleClass("scrolled", $(this).scrollTop() > $header.height());
-  });
-
+  // $(document).scroll(function () {
+  //   var $header = $(".l-header");
+  //   $header.toggleClass("scrolled", $(this).scrollTop() > $header.height());
+  // });
 });
