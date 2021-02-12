@@ -122,6 +122,8 @@ footer {
 .border-teal {
   border-left: 3px solid #03c5bc;
   border-right: 3px solid #03c5bc;
+  color: #fff;
+  margin-bottom: 1em;
 }
 
 .border-purple {
@@ -536,7 +538,7 @@ footer {
 }
 
 .sec-title h3 {
-  color: #172D6A;
+  color: #fff;
   display: block;
   font-family: novel-pro,Georgia,Times,Times New Roman,serif;
   font-size: 50px;
@@ -550,6 +552,7 @@ footer {
 }
 
 .sec-title p {
+  color: #fff;
   display: block;
   font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 20px;
@@ -561,12 +564,17 @@ footer {
   padding-bottom: 110px;
   padding-top: 75px;
   position: relative;
+  background-image: url(../images/contactbg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contact-page-section .inner-container {
   background-color: #00b8ca;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
   position: relative;
+  width: 800px;
   z-index: 1;
 }
 
@@ -657,7 +665,7 @@ footer {
 }
 
 .contact-form textarea {
-  height: 250px;
+  height: 125px;
   resize: none;
 }
 
@@ -802,6 +810,15 @@ footer {
   .sec-title h3 {
     line-height: 1.1;
   }
+
+  .contact-page-section .inner-container{
+    margin-left: 2.5em;
+    width: 550px;
+  }
+
+  .sec-title {
+    margin-left: 2.5em;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -909,4 +926,8 @@ footer {
     text-align: center;
     width: max-content;
   }
+
+  .contact-page-section .inner-container {
+    width: 400px;
+    }
 }
