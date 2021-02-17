@@ -391,7 +391,16 @@ footer {
   margin-bottom: 1.5em;
 }
 
+.episode__subheading {
+  font-family: novel-pro,Georgia,Times,Times New Roman,serif;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
 .episode__heading {
+  color: #172D6A;
+  font-size: 24px;
   margin-bottom: .5em;
 }
 
