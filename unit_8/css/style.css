@@ -937,6 +937,11 @@ footer {
   }
 
   .contact-page-section .inner-container {
-    width: 400px;
+    width: 350px;
+    margin-left: 1.5em;
+    }
+
+  .sec-title {
+    margin-left: 1.5em;
     }
 }
