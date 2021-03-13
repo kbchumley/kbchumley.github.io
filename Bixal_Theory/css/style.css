@@ -1006,7 +1006,6 @@ footer {
   top: 0px;
   opacity: 0;
   transition: opacity .35s ease;
-  
 }
 
 .card_button a {
@@ -1500,6 +1499,16 @@ footer {
     width: 331px;
   }
 
+  .overlay {
+    width: 331px;
+    height: 224px;
+  }
+
+  .card_button {
+    width: 331px;
+    height: 224px;
+  }
+
   .archive__content {
     margin-left: 0;
     margin-top: 1em;
@@ -1701,6 +1710,16 @@ footer {
   .archive_teaser img{
     height: 224px;
     width: 331px;
+  }
+
+  .overlay {
+    width: 331px;
+    height: 224px;
+  }
+
+  .card_button {
+    width: 331px;
+    height: 224px;
   }
 
   .archive__content {
